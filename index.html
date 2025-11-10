@@ -28,7 +28,13 @@
     <p>Deployed with App Engine.</p>
     <p>Using Python & Flask.</p>
     <h1>This is a new text</h1>
+    <button>Click Me!</button>
   </div>
-  <script>alert("Running on PaaS!");</script>
+  <script>alert("Running on PaaS!");
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", () => {
+      alert("Button Clicked!");
+    });
+  </script>
 </body>
 </html>
